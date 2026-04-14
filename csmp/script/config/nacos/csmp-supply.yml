@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    dynamic:
+      # 设置默认的数据源或者数据源组, 默认值即为 master
+      primary: master
+      datasource:
+        # 供应链模块沿用云管平台主库
+        master:
+          type: ${spring.datasource.type}
+          driver-class-name: ${datasource.system-postgres.driver-class-name}
+          url: ${datasource.system-postgres.url}
+          username: ${datasource.system-postgres.username}
+          password: ${datasource.system-postgres.password}
+
+dubbo:
+  consumer:
+    timeout: 5000

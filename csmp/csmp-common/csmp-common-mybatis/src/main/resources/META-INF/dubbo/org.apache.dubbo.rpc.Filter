@@ -1,0 +1,1 @@
+dubboDataPermissionFilter=com.csmp.common.mybatis.filter.DubboDataPermissionFilter

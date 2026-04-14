@@ -1,0 +1,2 @@
+com.csmp.common.log.event.LogEventListener
+com.csmp.common.log.aspect.LogAspect

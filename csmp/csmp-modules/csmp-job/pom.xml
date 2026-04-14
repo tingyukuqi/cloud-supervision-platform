@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.csmp</groupId>
+        <artifactId>csmp-modules</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>csmp-job</artifactId>
+
+    <description>
+        csmp-job 任务调度模块
+    </description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-nacos</artifactId>
+        </dependency>
+
+        <!-- csmp Common Log -->
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-log</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-dubbo</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-mybatis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-job</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-tenant</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.csmp</groupId>
+                    <artifactId>csmp-common-mybatis</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-security</artifactId>
+        </dependency>
+
+        <!-- csmp Api System -->
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-api-system</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

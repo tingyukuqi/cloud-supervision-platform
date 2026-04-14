@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.csmp</groupId>
+        <artifactId>csmp-example</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>csmp-test-mq</artifactId>
+
+    <description>
+        csmp-test-mq 案例项目
+    </description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-nacos</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-doc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-tenant</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.csmp</groupId>
+                    <artifactId>csmp-common-mybatis</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

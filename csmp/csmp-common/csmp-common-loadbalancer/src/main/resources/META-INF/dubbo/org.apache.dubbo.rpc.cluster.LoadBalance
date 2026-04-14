@@ -1,0 +1,1 @@
+customDubboLoadBalancer=com.csmp.common.loadbalance.core.CustomDubboLoadBalancer

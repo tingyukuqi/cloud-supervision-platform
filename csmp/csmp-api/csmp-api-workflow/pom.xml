@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.csmp</groupId>
+        <artifactId>csmp-api</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>csmp-api-workflow</artifactId>
+
+    <description>
+        csmp-api-workflow 工作流接口模块
+    </description>
+
+    <dependencies>
+
+        <!-- csmp Common Core-->
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-core</artifactId>
+        </dependency>
+
+        <!-- 非必需模块 如果需要跟工作流同步数据 则需要在对应服务内引入bus模块 如果只是调用工作流api则不需要 -->
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-bus</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+    </dependencies>
+
+</project>

@@ -1,0 +1,6 @@
+com.csmp.common.translation.config.TranslationConfig
+com.csmp.common.translation.core.impl.DeptNameTranslationImpl
+com.csmp.common.translation.core.impl.DictTypeTranslationImpl
+com.csmp.common.translation.core.impl.OssUrlTranslationImpl
+com.csmp.common.translation.core.impl.UserNameTranslationImpl
+com.csmp.common.translation.core.impl.NicknameTranslationImpl

@@ -1,0 +1,4 @@
+com.csmp.common.web.config.FilterConfig
+com.csmp.common.web.config.I18nConfig
+com.csmp.common.web.config.UndertowConfig
+com.csmp.common.web.config.ResourcesConfig

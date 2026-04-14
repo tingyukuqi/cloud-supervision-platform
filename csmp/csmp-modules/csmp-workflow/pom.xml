@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.csmp</groupId>
+        <artifactId>csmp-modules</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>csmp-workflow</artifactId>
+
+    <description>
+        工作流模块
+    </description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-nacos</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-doc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-mybatis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-log</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-idempotent</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-excel</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-translation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-tenant</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.dromara.warm</groupId>
+            <artifactId>warm-flow-mybatis-plus-sb3-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.dromara.warm</groupId>
+            <artifactId>warm-flow-plugin-ui-sb-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-dubbo</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-seata</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-service-impl</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-api-workflow</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.csmp</groupId>
+            <artifactId>csmp-common-bus</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
+

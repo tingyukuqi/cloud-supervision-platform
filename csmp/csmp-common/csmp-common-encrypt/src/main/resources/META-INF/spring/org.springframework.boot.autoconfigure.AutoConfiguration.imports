@@ -1,0 +1,2 @@
+com.csmp.common.encrypt.config.EncryptorAutoConfiguration
+com.csmp.common.encrypt.config.ApiDecryptAutoConfiguration

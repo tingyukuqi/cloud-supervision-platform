@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.csmp</groupId>
+        <artifactId>csmp</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>csmp-system</module>
+        <module>csmp-gen</module>
+        <module>csmp-job</module>
+        <module>csmp-resource</module>
+        <module>csmp-supply</module>
+        <module>csmp-workflow</module>
+    </modules>
+
+    <artifactId>csmp-modules</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        csmp-modules业务模块
+    </description>
+
+    <dependencies>
+        <!-- 自定义负载均衡(多团队开发使用) -->
+<!--        <dependency>-->
+<!--            <groupId>com.csmp</groupId>-->
+<!--            <artifactId>csmp-common-loadbalancer</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- ELK 日志收集 -->
+<!--        <dependency>-->
+<!--            <groupId>com.csmp</groupId>-->
+<!--            <artifactId>csmp-common-logstash</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- skywalking 日志收集 -->
+<!--        <dependency>-->
+<!--            <groupId>com.csmp</groupId>-->
+<!--            <artifactId>csmp-common-skylog</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- prometheus 监控 -->
+<!--        <dependency>-->
+<!--            <groupId>com.csmp</groupId>-->
+<!--            <artifactId>csmp-common-prometheus</artifactId>-->
+<!--        </dependency>-->
+
+    </dependencies>
+
+</project>

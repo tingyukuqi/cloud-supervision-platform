@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.csmp</groupId>
+        <artifactId>csmp</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>csmp-common-bom</module>
+        <module>csmp-common-alibaba-bom</module>
+        <module>csmp-common-log</module>
+        <module>csmp-common-service-impl</module>
+        <module>csmp-common-excel</module>
+        <module>csmp-common-core</module>
+        <module>csmp-common-redis</module>
+        <module>csmp-common-doc</module>
+        <module>csmp-common-security</module>
+        <module>csmp-common-satoken</module>
+        <module>csmp-common-web</module>
+        <module>csmp-common-mybatis</module>
+        <module>csmp-common-job</module>
+        <module>csmp-common-dubbo</module>
+        <module>csmp-common-seata</module>
+        <module>csmp-common-loadbalancer</module>
+        <module>csmp-common-oss</module>
+        <module>csmp-common-ratelimiter</module>
+        <module>csmp-common-idempotent</module>
+        <module>csmp-common-mail</module>
+        <module>csmp-common-sms</module>
+        <module>csmp-common-logstash</module>
+        <module>csmp-common-elasticsearch</module>
+        <module>csmp-common-skylog</module>
+        <module>csmp-common-prometheus</module>
+        <module>csmp-common-translation</module>
+        <module>csmp-common-sensitive</module>
+        <module>csmp-common-json</module>
+        <module>csmp-common-encrypt</module>
+        <module>csmp-common-tenant</module>
+        <module>csmp-common-websocket</module>
+        <module>csmp-common-social</module>
+        <module>csmp-common-nacos</module>
+        <module>csmp-common-bus</module>
+        <module>csmp-common-sse</module>
+    </modules>
+
+    <artifactId>csmp-common</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        csmp-common通用模块
+    </description>
+
+</project>

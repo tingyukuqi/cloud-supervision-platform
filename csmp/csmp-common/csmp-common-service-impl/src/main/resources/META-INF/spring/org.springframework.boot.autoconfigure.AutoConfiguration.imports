@@ -1,0 +1,2 @@
+com.csmp.common.core.service.impl.DictServiceImpl
+com.csmp.common.core.service.impl.PermissionServiceImpl
